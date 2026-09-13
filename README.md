@@ -1,4 +1,4 @@
-# Haramcy Linux Package Repository
+# Haramchy Linux Package Repository
 
 > Manifest-based package repository for Haramchy — winget-like structure with SHA-256 verification
 
