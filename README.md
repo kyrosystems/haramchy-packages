@@ -1,8 +1,8 @@
-# MakuLinux Package Repository
+# Haramcy Linux Package Repository
 
-> Manifest-based package repository for MakuLinux — winget-like structure with SHA-256 verification
+> Manifest-based package repository for Haramchy — winget-like structure with SHA-256 verification
 
-[![CI](https://github.com/kyrosystems/makulinux-packages/actions/workflows/validate.yml/badge.svg)](https://github.com/kyrosystems/makulinux-packages/actions/workflows/validate.yml)
+[![CI](https://github.com/kyrosystems/haramchy-packages/actions/workflows/validate.yml/badge.svg)](https://github.com/kyrosystems/haramchy-packages/actions/workflows/validate.yml)
 
 Packages are **not stored here**. Only manifests with metadata and download URLs.
 
