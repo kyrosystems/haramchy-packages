@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MakuLinux package helper (mlx-pkg)
+haramchy package helper (mlx-pkg)
 Handles manifest-based package installation with SHA-256 verification.
 
 Usage:
@@ -19,10 +19,10 @@ import tempfile
 import urllib.request
 from pathlib import Path
 
-MANIFEST_BASE_URL = "https://raw.githubusercontent.com/kyrosystems/makulinux-packages/main/manifests"
-CACHE_DIR = Path("/var/cache/makulinux/manifests")
-LOG_FILE = Path("/var/log/makulinux/pkg-verify.log")
-TMP_DIR = Path("/tmp/makulinux-pkg")
+MANIFEST_BASE_URL = "https://raw.githubusercontent.com/kyrosystems/haramchy-packages/main/manifests"
+CACHE_DIR = Path("/var/cache/haramchy/manifests")
+LOG_FILE = Path("/var/log/haramchy/pkg-verify.log")
+TMP_DIR = Path("/tmp/haramchy-pkg")
 
 
 def log(msg: str):
@@ -138,7 +138,7 @@ def install_package(name: str, version: str | None = None):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='MakuLinux package helper')
+    parser = argparse.ArgumentParser(description='haramchy package helper')
     sub = parser.add_subparsers(dest='command')
     
     inst = sub.add_parser('install', help='Install a package')
